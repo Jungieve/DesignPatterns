@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class JDBCConnectionPool extends ObjectPool<Connection> {
     private String url, user, pwd;
 
-    public JDBCConnectionPool(String url, String driver, String user, String pwd) {
+    public JDBCConnectionPool(String driver, String url, String user, String pwd) {
         super();
         try {
             Class.forName(driver).newInstance();
