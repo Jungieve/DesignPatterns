@@ -26,9 +26,9 @@ public class PrototypeTest  extends TestCase {
         Person tom2 = PersonRegistry.getPrototype("Tom");
         System.out.println(tom2.toString());
 
-        System.out.println(dick1.equals(dick2));
-        System.out.println(harry1.equals(harry2));
-        System.out.println(tom1.equals(tom2));
+        System.out.println(dick1==(dick2));
+        System.out.println(harry1==(harry2));
+        System.out.println(tom1==(tom2));
 
     }
 }
